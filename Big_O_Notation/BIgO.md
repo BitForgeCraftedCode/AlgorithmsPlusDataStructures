@@ -53,5 +53,5 @@ Thus a Big O of 1 O(1) -- f(n) = 3 is constant
 		}
 	}
 
-console log run n^2 times (or n*n times). If n=5 there will be 25 write lines
+console log will run n^2 times (or n*n times). If n=5 there will be 25 write lines
 Big O of n^2 O(n^2) -- f(n) is quadratic
