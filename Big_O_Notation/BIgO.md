@@ -58,15 +58,14 @@ Thus a Big O of 1 O(1) -- f(n) = 3 is constant
 	}
 
 console log will run n^2 times (or n*n times). If n=5 there will be 25 write lines
-Big O of n^2 O(n^2) -- f(n) is quadratic
+
+Big O of n^2 O(n^2) -- f(n) is quadratic.
 
 ## Constants and Small terms don't matter
 
-O(n + 10) = 0(n)
-
-O(1000n + 50) = O(n)
-
-O(n^2 + 5n + 8) = O(n^2)
+* O(n + 10) = 0(n)
+* O(1000n + 50) = O(n)
+* O(n^2 + 5n + 8) = O(n^2)
 
 ## Big O Shothands 
 
@@ -91,7 +90,7 @@ O(n^2 + 5n + 8) = O(n^2)
 		return total;
 	}
 
-The above function only has two primitive variables (total and i) thus the Big O for space complexity is O(1) always the same no matter the size of the input
+The above function only has two primitive variables (total and i) thus the Big O for space complexity is O(1) always the same no matter the size of the input.
 don't forget we exclude the input variable
 
 	function double(arr) {
@@ -103,3 +102,21 @@ don't forget we exclude the input variable
 	}
 
 as arr grows newArr grows proportionally space complexity is O(n)
+
+## log is inverse operation of exponents
+
+log2(value) = exponent  =>  2^exponent = value
+
+some algorthims have log complexity
+
+* searching algorithms
+* sorting algorithms
+* recursive algorithms have log space complexity
+
+## Recap
+
+* To analyze the performance of an algorithm, we use Big O Notation
+* Big O Notation can give us a high level understanding of the time or space complexity of an algorithm
+* Big O Notation doesn't care about percision, only about general trends (linear, quadratic constant)
+* The time or space complexity depends only on the algorthim, not the hardware used to run the algorithm
+
