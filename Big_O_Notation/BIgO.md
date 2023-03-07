@@ -4,7 +4,11 @@ We say that an algorithm is **O(f(n))** if the number of simple operations the c
 eventually less than a constant times **f(n)**, as **n** increases.
 
 It is a way of measuring how complex the algortihm is or how many operations must be done for the given algorithm.
-Count the operations. The more complex the algorthim the longer it will take to run. 
+Count the operations. The more complex the algorthim the longer it will take to run. Time complexitey
+
+The same idea can be applied to space complexity: how much pc memory do we need to allocate for our code/algorthim.
+
+technically this is called auxiliary space compexity: the space required by the algorthim, NOT including space taken up by the inputs.
 
 * f(n) could be linear f(n) = n
 * f(n) could be quadratic f(n) = n^2
@@ -55,3 +59,47 @@ Thus a Big O of 1 O(1) -- f(n) = 3 is constant
 
 console log will run n^2 times (or n*n times). If n=5 there will be 25 write lines
 Big O of n^2 O(n^2) -- f(n) is quadratic
+
+## Constants and Small terms don't matter
+
+O(n + 10) = 0(n)
+
+O(1000n + 50) = O(n)
+
+O(n^2 + 5n + 8) = O(n^2)
+
+## Big O Shothands 
+
+* arithmetic operation are constant -- addition or multiplication take the pc the same amount of time
+* variable assignment is constant
+* accessing elements in an array (by index) or object (by key) is constant
+* in a loop, the complexity is the length of the loop times the complexity of whatever happens inside the loop
+
+## Space Complexity Rules of Thumb
+
+* Most primitives (booleans, numbers, undefined, null) are constant space
+* Strings require O(n) space (where n is the string length)
+* Reference types are generally O(n), where n is the length (for arrays) or the number of keys (for objects)
+
+## example space complexity function
+
+	function sum(arr) {
+		let total = 0;
+		for(let i = 0; i < arr.length; i++) {
+			total += arr[i];
+		}
+		return total;
+	}
+
+The above function only has two primitive variables (total and i) thus the Big O for space complexity is O(1) always the same no matter the size of the input
+don't forget we exclude the input variable
+
+	function double(arr) {
+		let newArr = [];
+		for(let i = 0; i < arr.length; i++) {
+			newArr.push(2*arr[i]);
+		}
+		return newArr;
+	}
+
+as arr grows newArr grows proportionally space complexity is O(n)
