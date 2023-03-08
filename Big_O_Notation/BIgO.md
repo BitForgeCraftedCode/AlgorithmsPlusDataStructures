@@ -3,6 +3,10 @@
 We say that an algorithm is **O(f(n))** if the number of simple operations the computer has to do is
 eventually less than a constant times **f(n)**, as **n** increases.
 
+Definition: A theoretical measure of the execution of an algorithm, usually the time or memory needed, given the problem size n, which is usually the number of items. Informally, saying some equation f(n) = O(g(n)) means it is less than some constant multiple of g(n). The notation is read, "f of n is big oh of g of n".
+
+[formal definition here](https://xlinux.nist.gov/dads/HTML/bigOnotation.html)
+
 It is a way of measuring how complex the algortihm is or how many operations must be done for the given algorithm.
 Count the operations. The more complex the algorthim the longer it will take to run. Time complexitey
 
@@ -57,7 +61,7 @@ Thus a Big O of 1 O(1) -- f(n) = 3 is constant
 		}
 	}
 
-console log will run n^2 times (or n*n times). If n=5 there will be 25 write lines
+console log will run n^2 times. If n=5 there will be 25 write lines
 
 Big O of n^2 O(n^2) -- f(n) is quadratic.
 
