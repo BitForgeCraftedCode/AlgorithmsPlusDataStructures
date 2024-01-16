@@ -26,6 +26,20 @@ technically this is called auxiliary space compexity: the space required by the 
 For example the two functions below to find the sum of the first n natural numbers.
 
 ## 1st function 
+	int AddUpTo(int n)
+	{
+		int total = 0; //1 assignment 1 declaration
+		for(int i = 1; i <= n; i++) //1 assignment 1 declaration n+1 comparisons i++ has n additions n assignments 
+		{
+			total += i; //n additions n assignments
+			//total = total + i; 
+		}
+		return total; //1 return
+	}
+	// 2 + 2 + n+1 +2n + 2n + 1
+	// hence we have 5n + 6 or a linear 
+	Console.WriteLine(AddUpTo(3));
+	
 	function addUpTo(n) {
 		let total = 0; //1 assignment 
 		for (let i = 1; i <= n; i++) {
