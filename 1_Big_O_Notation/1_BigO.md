@@ -19,6 +19,10 @@ technically this is called auxiliary space compexity: the space required by the 
 * f(n) could be constant f(n) = 1
 * f(n) could be something entirely different.
 
+## Constant Execution Time
+
+![Constant Execution Time](ConstantExecutionTime.png "Constant Execution Time")
+
 For example the two functions below to find the sum of the first n natural numbers.
 
 ## 1st function 
