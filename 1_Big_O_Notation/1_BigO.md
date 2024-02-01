@@ -19,11 +19,9 @@ technically this is called auxiliary space compexity: the space required by the 
 * f(n) could be constant f(n) = 1
 * f(n) could be something entirely different.
 
-## Constant Execution Time
-
-![Constant Execution Time](ConstantExecutionTime.png "Constant Execution Time")
-
 For example the two functions below to find the sum of the first n natural numbers.
+
+* in a loop, the complexity is the length of the loop times the complexity of whatever happens inside the loop
 
 ## 1st function 
 	int AddUpTo(int n)
@@ -89,12 +87,25 @@ Big O of n^2 O(n^2) -- f(n) is quadratic.
 * O(1000n + 50) = O(n)
 * O(n^2 + 5n + 8) = O(n^2)
 
-## Big O Shothands 
+## Constant Execution Time
 
-* arithmetic operation are constant -- addition or multiplication take the pc the same amount of time
-* variable assignment is constant
-* accessing elements in an array (by index) or object (by key) is constant
-* in a loop, the complexity is the length of the loop times the complexity of whatever happens inside the loop
+* Variable declarations
+* Variable assignment is constant
+* Arithmetic operation are constant -- addition or multiplication take the pc the same amount of time
+* Comparison statements
+* Accessing elements in an array (by index) or object (by key) is constant
+* Calling functions/methods
+* Returning values
+
+## Performance Classification
+
+* Constant O(1)
+* Logarithm O(log(n))
+* Linear O(n)
+* n-log-n O(n log(n))
+* Quadratic O(n^2)
+* Cubic O(^3)
+* Exponential O(2^n)
 
 ## Space Complexity Rules of Thumb
 
