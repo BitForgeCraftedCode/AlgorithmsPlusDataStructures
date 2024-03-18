@@ -21,6 +21,8 @@ void Main(string[] args)
 	if key > middle seachr uppper half
 	
  repeat until done. 
+ 
+ Binary search is O(logn) -- https://stackoverflow.com/questions/2307283/what-does-olog-n-mean-exactly
 */
 static int BinarySearch(int[] A, int n , int key)
 {
