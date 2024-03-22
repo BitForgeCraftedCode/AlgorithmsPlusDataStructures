@@ -1,0 +1,5 @@
+Selection sort is unstable if A=[3,5,8,9,5,2]
+ the original order of duplicates will not be preserved
+ Doesnt matter if this array is just numbers 
+ but if however the array is a set of objects with values name and salary
+ and is already sorted by salary then a second sort on name will NOT preserver the salary sort.
